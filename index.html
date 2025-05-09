@@ -2,73 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Concon's Bakeshop</title>
-    <link rel="stylesheet" href=".output.css">
-    <link rel="icon" href="breads.png">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Concon's Bakeshop" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 </head>
-
-<body>
-
-  <div class="p-4" style="background-image: url(background.png);">
-    <header class="p-1 text-white flex justify-between items-center sticky top-0 font-serif">
-        <h1 class="text-3xl font-bold font-serif">Concon's Bakeshop</h1>
-    </header>
-
-
-    <div class="flex justify-center space-x-8 py-1 place-content-center sticky">
-      <a href="nav" class="text-xl font-serif text-white hover:underline">Home</a>
-      <a href="nav" class="text-xl font-serif text-white hover:underline">Menu</a>
-      <a href="nav" class="text-xl font-serif text-white hover:underline">Location</a>
-      <a href="nav" class="text-xl font-serif text-white hover:underline">About Us</a>   
-
-       <form action="/search" method="get">
-        <input class="font-serif text-white bg-black rounded-sm p-1 px-4 border-transparent"
-               type="search"
-               id="search"
-               name="searchbar"
-               placeholder="Search...">
-    </form>
+<body style="background-image: url(background.jpg)">
+    <div id="header">
+        <h1>Concon's Bakeshop</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="location.html">Location</a>
+            <a href="about.html">About Us</a>
+        </nav>
+        <form action="/search" method="get">
+            <input type="search" id="search" name="searchbar" placeholder="Search Product">
+        </form>
     </div>
-  <h1 class="text-center text-3xl shadow-2xs m-2 font-serif text-white">Our products</h1>
+    <h2 id="our_products"><center>Our products</center></h2>
+    <div class="content"> 
+        <div class="products"> 
+            <div class="box">
+                <img src="one.jpg" alt="grad cake" id="cake1"> 
+                <div class="desc"> 
+                    <h2>Celebration Cake</h2>
+                    <p>single-tier graduation cake frosted in white with a miniature graduation cap and diploma on top. Gold pearls add a touch of sparkle.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="haha.jpg" alt="bday" id="cake2">
+                <div class="desc">
+                    <h2>Greeting Cake</h2>
+                    <p>A birthday cake adorned with delicate pink rose-shaped frosting swirls, accented with shimmering gold pearl sprinkles.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="wedding.jpg" alt="wedding cakes" id="cake3">
+                <div class="desc">
+                    <h2>Wedding Cake</h2>
+                    <p>A one-tier wedding cake adorned with white flowers and a gold topper. Adds a touch of sparkle and shine.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="cupcakes.jpg" alt="cupcakes" id="cupcakes1">
+                <div class="desc">
+                    <h2>Cupcakes</h2>
+                    <p>A cupcake decorated with a two-toned swirl of pink and white frosting, resembling a rose. Gold pearl sprinkles add a touch of elegance.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="number.jpg" alt="number cake" id="cake4">
+                <div class="desc">
+                    <h2>Number Cake</h2>
+                    <p>A number cake frosted with white and green, decorated with daisies, hearts, buttons, macaroons, and sprinkles.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="5.jpg" alt="bread" id="bread">
+                <div class="desc">
+                    <h2>Crinkles</h2>
+                    <p>Chocolate Crinkles fudge-like chocolate cookies that are encased in a coating of sugar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+          <img src="logo-removebg-preview.png" alt="Logo" width="150px" height="150px" style="border-radius: 10px;" />
+          
+          <div id="icons">
+            <img src="Facebook_logo_(square).png" alt="Facebook" height="25px" width="25px">
+            <img src="ig.png" alt="Instagram" height="25px" width="25px">
+            <img src="tiktok.png" alt="TikTok" height="25px" width="25px">
+            
+            <p>"Freshly baked, Always loved."</p>
 
-  <div class="grid grid-cols-4 gap-4 m-6">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="one.jpg" alt="CelebCake">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="two.jpg" alt="BirthdayCake">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="cupcakes.jpg" alt="cupcakes">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="5.jpg" alt="bread">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="wedding.jpg" alt="wedding">
-    <img class="col-span-2 row-span-2 border-2 w-50 h-50 border-black" src="number.jpg" alt="number">
-  
-
-      </div>
-    
-  
-        <footer class="flex justify-between items-center bg-[#C19A6B] p-4 border-b border-black">
-
-          <img class="w-40 h-40 rounded-lg m-6" src="logo-removebg-preview.png" alt="Logo">
-        
-          <div class="flex gap-px4">
-          <img class="w-10 h-10 rounded-lg m-6" src="Facebook_logo_(square).png" alt="facebook">
-          <img class="w-10 h-10 rounded-lg m-6" src="IG.jpg" alt="instagram">
-          <img class="w-10 h-10 rounded-lg m-6" src="TIKTOK.jpg" alt="tiktok">
           </div>
-        
-          <p class="text-white text-sm font-serif">Freshly baked, Always loved.</p>
-        
-          <nav class="m-10">
-        
-            <a href="nav" class="text-xl font-serif text-white hover:underline">Our Story</a>
-            <a href="nav" class="text-xl font-serif text-white hover:underline">Terms & Condition</a>
-            <a href="nav" class="text-xl font-serif text-white hover:underline">Privacy Policy</a>
-        
-          </nav>
-        
-        </footer>
-        
-        <p class="text-center mt-4 text-sm sticky">© 2025 Concon's Bakeshop. All Rights Reserved.</p>
-        
 
+          <div class="footernavbar">
+            <a href="our-story.html" id="nav-link">Our Story</a>
+            <a href="terms-and-conditions.html" id="nav-link">Terms & Conditions</a>
+            <a href="privacy-policy.html" id="nav-link">Privacy Policy</a>
+          </div>
+        </div>
+        
+        <p>© 2025 Concon's Bakeshop. All Rights Reserved.</p>  
+    </footer>
 </body>
 </html>
